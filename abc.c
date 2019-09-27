@@ -49,7 +49,7 @@ asmlinkage long sys_sh_task_info(long pid, char* filename)
                 vfs_write(file, buffer, strlen(buffer), &pos);
                 fput(file);
             }
-            sys_close(fd);
+            sys_close(a);
 
 
         }
